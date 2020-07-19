@@ -3,28 +3,26 @@ import styled from 'styled-components'
 
 const SectionGroup = styled.div`
 background: black;
-height: 720px;
-`
-const SectionLogo = styled.img`
+height: 720px; 
 `
 
-const SectionTitleGroup = styled.div`
-`
+const SectionLogo = styled.img``
 
-const SectionTitle = styled.h3`
-`
+const SectionTitleGroup = styled.div``
 
-const SectionText = styled.p`
-`
+const SectionTitle = styled.h3``
+
+const SectionText = styled.p``
+
 
 const Section = props => (
-<SectionGroup image={props.image}>
-    <SectionLogo src={props.logo} />
+    <SectionGroup image={props.image}>
+        <SectionLogo src={props.logo} />
         <SectionTitleGroup>
-        <SectionTitle>{props.title}</SectionTitle>
-        <SectionText>{props.text}</SectionText>
-     </SectionTitleGroup>
-</SectionGroup>
+            <SectionTitle>{props.title}</SectionTitle>
+            <SectionText>{props.text}</SectionText>
+        </SectionTitleGroup>
+    </SectionGroup>
 )
 
 export default Section
